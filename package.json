@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently --kill-others \"node server.js\" \"json-server --watch transactions.json\"",
+    "start": "node server.js",
+    "server": "concurrently --kill-others \"npm run start\" \"json-server --watch transactions.json\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "concurrently --kill-others \"ng build --aot --prod\" \"json-server --watch transactions.json\""
   },
   "private": true,
   "dependencies": {
