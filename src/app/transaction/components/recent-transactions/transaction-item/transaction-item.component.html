@@ -1,0 +1,8 @@
+<div class="left-border" [style.backgroundColor]="transaction.categoryCode"></div>
+<div class="date" [textContent]="transaction.date | date:'LLL. d'"></div>
+<div class="logo"><img width="40" [src]="transaction.logo" alt="logo"></div>
+<div class="name">
+  <div class="merchant" [textContent]="transaction.merchantName"></div>
+  <div class="payment-type" [textContent]="transaction.type"></div>
+</div>
+<div class="amount">-{{transaction.currencyCode}}{{transaction.amount}}</div>

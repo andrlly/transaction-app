@@ -1,0 +1,60 @@
+<h1 mat-dialog-title>{{ 'CONFIRM_TRANSFER' | translate }} {{data.merchantName}}</h1>
+
+<form [formGroup]="transferForm">
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>{{ 'FROM_ACCOUNT' | translate}}</mat-label>
+      <input matInput readonly type="text" placeholder="Free Checking">
+    </mat-form-field>
+
+    <mat-form-field [hideRequiredMarker]="true">
+      <mat-label>{{ 'TO_ACCOUNT' | translate}}</mat-label>
+      <input required matInput type="text" formControlName="merchantName" placeholder="Georgia Power Electric Company">
+    </mat-form-field>
+
+    <mat-form-field [hideRequiredMarker]="true">
+      <mat-label>{{ 'AMOUNT' | translate}}</mat-label>
+      <input required matInput type="number" formControlName="amount" placeholder="0.00">
+      <span matSuffix>$&nbsp;</span>
+    </mat-form-field>
+
+    <div class="category">
+    <span>{{ 'CATEGORY' | translate}}</span>
+    <color-circle width="300" circleSize="22" circleSpacing="5"
+                  (onChangeComplete)="onChangeCategoryCodeComplete($event)"></color-circle>
+    </div>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{ 'TYPE' | translate}}</mat-label>
+      <mat-select formControlName="type">
+        <mat-option *ngFor="let type of transactionTypes" [value]="type.name">
+          {{type.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="logo-form-group">
+      <label for="logo">{{ 'CHOOSE_LOGO' | translate }}*</label>
+      <input type="file"
+             required
+             id="logo"
+             accept="image/*"
+             size="1048576"
+             (change)="handleFileInput($event)">
+    </div>
+
+    <img *ngIf="logoImage" width="150" src="{{logoImage}}" alt="logo" id="logoBase64" />
+
+    <div class="action-buttons">
+      <button mat-raised-button color="accent" (click)="onNoClick()">{{ 'CANCEL' | translate}}</button>
+      <button
+        mat-raised-button
+        color="primary"
+        [mat-dialog-close]="data"
+        [disabled]="!transferForm.valid"
+        (click)="onMakeTransfer()"
+      >{{ 'TRANSFER' | translate}}</button>
+    </div>
+  </div>
+</form>
+

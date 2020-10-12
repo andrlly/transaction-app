@@ -1,0 +1,58 @@
+:host {
+  display: flex;
+  align-items: center;
+}
+
+.filters {
+  margin-left: 10px;
+}
+
+.filters span {
+  text-align: center;
+  padding: 5px 5px 5px 0;
+  width: 87px;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  position: relative;
+}
+
+.filters span:last-child  {
+  border-right: 1px solid #ccc;
+}
+
+.filters span.up mat-icon {
+  transform: rotate(270deg);
+}
+
+mat-icon {
+  font-size: 12px;
+  position: absolute;
+  transform: rotate(90deg);
+  right: 4px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5px;
+  height: 5px;
+}
+
+
+@media (max-width: 750px) {
+  .filters span  {
+    font-size: 11px;
+    width: 79px;
+  }
+}
+
+@media (max-width: 700px) {
+  :host {
+    flex-direction: column;
+  }
+}

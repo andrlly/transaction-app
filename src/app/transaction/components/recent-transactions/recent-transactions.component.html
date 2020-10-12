@@ -1,0 +1,25 @@
+<div class="recent-transaction">
+  <div class="header">
+    <mat-icon class="icon" aria-hidden="false" aria-label="briefcase">business_center</mat-icon>
+    <span class="title">{{ 'RECENT_TRANSACTIONS' | translate}}</span>
+  </div>
+
+  <mat-card>
+    <div class="filters">
+      <div class="search">
+        <app-search #searchComponent></app-search>
+      </div>
+      <div class="sortBy">
+        <app-sort-by
+          [transactions]="transactions$ | async"
+        ></app-sort-by>
+      </div>
+    </div>
+    <div class="transactions">
+      <app-transaction-item
+        *ngFor="let transaction of transactions$ | async | search: searchComponent.searchValue: 'merchantName'"
+        [transaction]="transaction"
+      ></app-transaction-item>
+    </div>
+  </mat-card>
+</div>

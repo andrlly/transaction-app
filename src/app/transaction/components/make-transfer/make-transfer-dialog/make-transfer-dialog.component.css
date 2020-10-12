@@ -1,0 +1,27 @@
+:host {
+  text-align: center;
+}
+
+mat-form-field {
+  width: 300px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-form-group {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+#logoBase64 {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.category {
+  text-align: left;
+  margin: 5px 0 25px 0;
+}

@@ -1,0 +1,69 @@
+.recent-transaction {
+  min-width: 750px;
+  max-height: 750px;
+  overflow: auto;
+}
+
+.filters {
+  display: flex;
+}
+
+.search, .sortBy {
+  flex: 50%;
+}
+
+.sortBy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header {
+  color: white;
+  font-weight: 300;
+  background-color: #227185;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.title {
+  flex: auto;
+}
+
+.icon {
+  flex: 1;
+  margin: 0 15px;
+}
+
+@media (max-width: 1024px) {
+  .recent-transaction {
+    min-width: inherit;
+  }
+}
+
+@media (max-width: 620px) {
+  .search {
+    flex: 20%;
+  }
+}
+
+@media (max-width: 505px) {
+  .filters {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search, .sortBy {
+    flex: 100%;
+  }
+
+  .sortBy {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+

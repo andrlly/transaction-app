@@ -1,0 +1,21 @@
+<div class="header" role="banner">
+  <img
+    alt="Logo"
+    src="../../../../../assets/images/logo.jpg"
+  />
+  <div class="balance">
+    {{'BALANCE' | translate }} {{transactionDS.totalBalance$ | async}}$
+  </div>
+  <label>
+    <select
+      class="select-language"
+      #selectedLang
+      (change)="switchLang(selectedLang.value)">
+      <option *ngFor="let language of translatesService.getLangs()"
+              [value]="language"
+              [selected]="language === translatesService.currentLang">
+        {{ language }}
+      </option>
+    </select>
+  </label>
+</div>

@@ -1,0 +1,20 @@
+{
+  "BALANCE": "Balance",
+  "MAKE_TRANSFER": "Make transfer",
+  "FREE_CHECKING": "Free Checking(4692)",
+  "RECENT_TRANSACTIONS": "Recent Transactions",
+  "FROM_ACCOUNT": "from account",
+  "TO_ACCOUNT": "to account",
+  "AMOUNT": "amount",
+  "SUBMIT": "submit",
+  "CONFIRM_TRANSFER": "Confirm transfer to",
+  "CHOOSE_LOGO": "Choose a logo",
+  "CATEGORY": "Category",
+  "TYPE": "Type",
+  "CANCEL": "Cancel",
+  "TRANSFER": "Transfer",
+  "SEARCH": "Search by typing...",
+  "BENEFICIARY": "beneficiary",
+  "DATE": "date",
+  "SORT_BY": "sort by"
+}

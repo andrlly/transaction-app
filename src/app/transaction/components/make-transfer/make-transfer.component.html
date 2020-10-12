@@ -1,0 +1,35 @@
+<div class="make-transfer">
+  <div class="header">
+    <mat-icon class="icon" aria-hidden="false" aria-label="sync">sync</mat-icon>
+    <span class="title">{{ 'MAKE_TRANSFER' | translate}}</span>
+  </div>
+  <div class="content">
+    <mat-card>
+      <div class="form">
+        <mat-form-field>
+          <mat-label><span class="input-title">{{ 'FROM_ACCOUNT' | translate}}</span></mat-label>
+          <input matInput readonly type="text" placeholder="{{ 'FREE_CHECKING' | translate }} - {{transactionDS.totalBalance$ | async}}$">
+        </mat-form-field>
+
+        <mat-form-field [hideRequiredMarker]="true">
+          <mat-label><span class="input-title">{{ 'TO_ACCOUNT' | translate}}</span></mat-label>
+          <input required matInput type="text" [formControl]="toAccount" placeholder="Georgia Power Electric Company">
+        </mat-form-field>
+
+        <mat-form-field [hideRequiredMarker]="true">
+          <mat-label><span class="input-title">{{ 'AMOUNT' | translate}}</span></mat-label>
+          <input required matInput type="number" [formControl]="amount" placeholder="0.00">
+          <span matSuffix>$&nbsp;</span>
+        </mat-form-field>
+
+        <button mat-button
+                type="button"
+                class="open-dialog"
+                [disabled]="!(amount.value && toAccount.value)"
+                (click)="onMakeTransferOpenDialog()"
+        >{{ 'SUBMIT' | translate}}</button>
+
+      </div>
+    </mat-card>
+  </div>
+</div>

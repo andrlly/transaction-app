@@ -1,0 +1,20 @@
+{
+  "BALANCE": "Баланс",
+  "MAKE_TRANSFER": "Здійснити переказ",
+  "FREE_CHECKING": "Безкоштовний переказ(4692)",
+  "RECENT_TRANSACTIONS": "Останні перекази",
+  "FROM_ACCOUNT": "з акаунта",
+  "TO_ACCOUNT": "на акаунт",
+  "AMOUNT": "сума",
+  "SUBMIT": "надіслати",
+  "CONFIRM_TRANSFER": "Підтвердити переказ на",
+  "CHOOSE_LOGO": "Виберіть лого",
+  "CATEGORY": "Категорія",
+  "TYPE": "Тип",
+  "CANCEL": "Відміна",
+  "TRANSFER": "Переказати",
+  "SEARCH": "Пошук...",
+  "BENEFICIARY": "Отримувач",
+  "DATE": "дата",
+  "SORT_BY": "сортувати"
+}

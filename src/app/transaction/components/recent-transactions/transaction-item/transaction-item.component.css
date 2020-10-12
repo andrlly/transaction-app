@@ -1,0 +1,52 @@
+:host {
+  position: relative;
+  display: flex;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  align-items: center;
+  height: 50px;
+}
+
+:host:last-child  {
+  border-bottom: 2px solid #ccc;;
+}
+
+.date {
+  flex: 2;
+  font-size: 12px;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.name {
+  flex: 8;
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.payment-type {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.amount {
+  flex: 0;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.left-border {
+  position: absolute;
+  width: 7px;
+  height: 54px;
+  top: -2px;
+  left: -7px;
+}
+

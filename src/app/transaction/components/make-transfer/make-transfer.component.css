@@ -1,0 +1,49 @@
+.make-transfer {
+  min-width: 300px;
+}
+
+.content {
+  background-color: #ffffff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.open-dialog {
+  background-color: #e75a27;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  width: 150px;
+  align-self: flex-end;
+}
+
+.header {
+  color: white;
+  font-weight: 300;
+  background-color: #227185;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+
+.title {
+  flex: auto;
+}
+
+.icon {
+  flex: 1;
+  margin: 0 15px;
+}

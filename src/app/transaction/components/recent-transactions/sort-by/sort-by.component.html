@@ -1,0 +1,15 @@
+<span><b>{{ 'SORT_BY' | translate }}</b></span>
+<div class="filters" (click)="onSortToggle($event)">
+  <span [appSort]="transactions" role="button" data-order="asc" data-name="date" data-type="date">
+    <mat-icon aria-hidden="false" aria-label="arrow icon">play_arrow</mat-icon>
+    {{ 'DATE' | translate }}
+  </span>
+  <span [appSort]="transactions" role="button" data-order="asc" data-name="merchantName">
+    <mat-icon aria-hidden="false" aria-label="arrow icon">play_arrow</mat-icon>
+    {{ 'BENEFICIARY' | translate }}
+  </span>
+  <span [appSort]="transactions" role="button" data-order="asc" data-name="amount">
+    <mat-icon aria-hidden="false" aria-label="arrow icon">play_arrow</mat-icon>
+    {{ 'AMOUNT' | translate }}
+  </span>
+</div>

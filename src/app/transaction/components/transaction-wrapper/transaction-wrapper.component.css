@@ -1,0 +1,20 @@
+.transaction-wrapper {
+  background: url('../../../../assets/images/background.jpg') no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  padding-top: 80px;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+@media (min-width: 1025px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
