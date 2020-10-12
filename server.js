@@ -9,7 +9,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/transaction-app/index.html'))
 })
 
-app.listen(process.env.PORT || 8080);
 
 const jsonServer = require('json-server');
 const server = jsonServer.create();
@@ -19,7 +18,8 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(router);
 
-server.listen(process.env.PORT || 4000);
+app.listen(process.env.PORT || 8080);
+server.listen(process.env.PORT || 4009);
 
 
 
