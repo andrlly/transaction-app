@@ -1,13 +1,15 @@
-// const express = require('express');
-// const path = require('path');
-//
-// const app = express();
-//
-// app.use(express.static(__dirname + '/dist/transaction-app'))
-//
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname + '/dist/transaction-app/index.html'))
-// })
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+app.use(express.static(__dirname + '/dist/transaction-app'))
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/dist/transaction-app/index.html'))
+})
+
+app.listen(process.env.PORT || 8080);
 
 const jsonServer = require('json-server');
 const server = jsonServer.create();
@@ -20,10 +22,6 @@ server.use(router);
 server.listen(process.env.PORT || 4000);
 
 
-// const jsonServer = require('json-server');
-// const server = jsonServer.create();
-// const router = jsonServer.router('data.json');
-// const port = process.env.PORT || 4000;
 
 
 
