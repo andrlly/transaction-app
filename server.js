@@ -11,15 +11,6 @@ app.get('*', (req, res) => {
 
 app.listen(process.env.PORT || 8080)
 
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('transaction.json');
-const middlewares = jsonServer.defaults();
-
-server.use(middlewares);
-server.use(router);
-
-// server.listen(process.env.PORT || 4000);
 
 
 
