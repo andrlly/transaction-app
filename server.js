@@ -9,14 +9,22 @@
 //   res.sendFile(path.join(__dirname + '/dist/transaction-app/index.html'))
 // })
 
-
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router('transaction.json');
-const port = process.env.PORT || 4000;
+const middlewares = jsonServer.defaults();
 
+server.use(middlewares);
 server.use(router);
-server.listen(port);
+
+server.listen(process.env.PORT || 4000);
+
+
+// const jsonServer = require('json-server');
+// const server = jsonServer.create();
+// const router = jsonServer.router('data.json');
+// const port = process.env.PORT || 4000;
+
 
 
 
