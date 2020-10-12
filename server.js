@@ -19,7 +19,7 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(router);
 
-server.listen(process.env.PORT || 4000);
+// server.listen(process.env.PORT || 4000);
 
 
 
