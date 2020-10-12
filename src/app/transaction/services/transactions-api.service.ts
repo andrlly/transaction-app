@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { ITransaction, ITransactionRequest } from '@transactionModule/interfaces/transaction.interface';
 import { map } from 'rxjs/operators';
 import { Mappers } from '@sharedModule/utils/mappers';
-import { environment } from '@environment/environment';
+import { environment } from '@environment/environment.prod';
 
 @Injectable({
   providedIn: 'root'
