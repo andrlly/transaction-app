@@ -1,27 +1,32 @@
 # TransactionApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
+## General info
+This project is simple transaction app.
+Go to https://transaction-app9.herokuapp.com/
 
-## Development server
+## Technologies
+Project is created with:
+* NodeJs version: 12.18.4
+* npm version: 6.14.6
+* angular-cli version: 10.1.4
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Download 
 
-## Code scaffolding
+```
+$ git clone https://github.com/andrlly/transaction-app.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup
+To run this project, install it locally using npm:
 
-## Build
+```
+$ cd transaction-app
+$ npm install
+$ npm run serve:dev
+$ Navigate to `http://localhost:4200/`.
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+####Application structure
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Application build on flux structure with data and api services.
+For the scaling project I used transactio module and in the future we can expand  
