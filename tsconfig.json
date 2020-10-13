@@ -19,7 +19,7 @@
     "paths": {
       "@root/*": ["src/*"],
       "@app/*": ["src/app/*"],
-      "@environment/*": ["src/environments/*"],
+      "@environments/*": ["src/environments/*"],
       "@transactionModule/*": ["src/app/transaction/*"],
       "@sharedModule/*": ["src/app/shared/*"]
     }
