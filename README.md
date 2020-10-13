@@ -28,5 +28,8 @@ $ Navigate to `http://localhost:4200/`.
 
 ####Application structure
 
-Application build on flux structure with data and api services.
-For the scaling project I used transactio module and in the future we can expand  
+* Application builds on flux structure with data and api services.
+* Used the transaction module as a feature and module approach to help us in the future to expand our app simply other modules if we will have some cases.
+* Used aliases — we don’t need to change anything in our codebase. We just need to give the module the same name.
+* Used Smart and Dumb components pattern (Presentation and Container components).
+* Added `i18n` multi-languages support
